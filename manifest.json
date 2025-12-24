@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "RB Leipzig Ticket Bot",
+  "version": "1.0.0",
+  "host_permissions": [
+    "https://docs.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.tickets.rbleipzig.com/selection/event/*",
+        "*://*.tickets.rbleipzig.com/error/noAvailability",
+        "*://*.tickets.rbleipzig.com/cart/reservation/0"
+        ],
+      "js": ["dist/content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage",
+    "alarms"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  }
+}

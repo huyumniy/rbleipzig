@@ -1,0 +1,2551 @@
+{
+    "priceRangeCategories": [
+        {
+            "id": 10229272920405,
+            "name": {
+                "de": "PK0"
+            },
+            "rank": 2,
+            "bgColor": "FFC890",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 89000,
+            "maxPrice": 89000,
+            "blocks": [
+                {
+                    "id": 10229272792353,
+                    "name": {
+                        "de": "18",
+                        "en": "18"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792382,
+                    "name": {
+                        "de": "2",
+                        "en": "2"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792350,
+                    "name": {
+                        "de": "35",
+                        "en": "35"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792353": {
+                    "availability": 0,
+                    "availabilityResale": 1
+                },
+                "10229272792382": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792350": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229407807028,
+            "name": {
+                "de": "PK0-"
+            },
+            "rank": 3,
+            "bgColor": "FFC890",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 90000,
+            "maxPrice": 90000,
+            "blocks": [
+                {
+                    "id": 10229272792371,
+                    "name": {
+                        "de": "117",
+                        "en": "117"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792373,
+                    "name": {
+                        "de": "121",
+                        "en": "121"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792352,
+                    "name": {
+                        "de": "17",
+                        "en": "17"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792353,
+                    "name": {
+                        "de": "18",
+                        "en": "18"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792374,
+                    "name": {
+                        "de": "20",
+                        "en": "20"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792370,
+                    "name": {
+                        "de": "21",
+                        "en": "21"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792383,
+                    "name": {
+                        "de": "1",
+                        "en": "1"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792382,
+                    "name": {
+                        "de": "2",
+                        "en": "2"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792350,
+                    "name": {
+                        "de": "35",
+                        "en": "35"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792374": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792373": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792370": {
+                    "availability": 1,
+                    "availabilityResale": 1
+                },
+                "10229272792371": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792352": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                },
+                "10229272792353": {
+                    "availability": 0,
+                    "availabilityResale": 1
+                },
+                "10229272792350": {
+                    "availability": 2,
+                    "availabilityResale": 0
+                },
+                "10229272792382": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792383": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229283524105,
+            "name": {
+                "de": "PK1+"
+            },
+            "rank": 4,
+            "bgColor": "f6a44e",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 79000,
+            "maxPrice": 79000,
+            "blocks": [
+                {
+                    "id": 10229272792352,
+                    "name": {
+                        "de": "17",
+                        "en": "17"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792353,
+                    "name": {
+                        "de": "18",
+                        "en": "18"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792374,
+                    "name": {
+                        "de": "20",
+                        "en": "20"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792370,
+                    "name": {
+                        "de": "21",
+                        "en": "21"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792383,
+                    "name": {
+                        "de": "1",
+                        "en": "1"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792382,
+                    "name": {
+                        "de": "2",
+                        "en": "2"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792350,
+                    "name": {
+                        "de": "35",
+                        "en": "35"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792374": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792370": {
+                    "availability": 5,
+                    "availabilityResale": 0
+                },
+                "10229272792352": {
+                    "availability": 0,
+                    "availabilityResale": 1
+                },
+                "10229272792353": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792382": {
+                    "availability": 3,
+                    "availabilityResale": 0
+                },
+                "10229272792350": {
+                    "availability": 3,
+                    "availabilityResale": 1
+                },
+                "10229272792383": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920431,
+            "name": {
+                "de": "PK1"
+            },
+            "rank": 5,
+            "bgColor": "f6a44e",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 75000,
+            "maxPrice": 75000,
+            "blocks": [
+                {
+                    "id": 10229272792355,
+                    "name": {
+                        "de": "16",
+                        "en": "16"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792352,
+                    "name": {
+                        "de": "17",
+                        "en": "17"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792353,
+                    "name": {
+                        "de": "18",
+                        "en": "18"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792374,
+                    "name": {
+                        "de": "20",
+                        "en": "20"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792370,
+                    "name": {
+                        "de": "21",
+                        "en": "21"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792383,
+                    "name": {
+                        "de": "1",
+                        "en": "1"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792382,
+                    "name": {
+                        "de": "2",
+                        "en": "2"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792350,
+                    "name": {
+                        "de": "35",
+                        "en": "35"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792374": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792370": {
+                    "availability": 4,
+                    "availabilityResale": 4
+                },
+                "10229272792355": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792352": {
+                    "availability": 7,
+                    "availabilityResale": 1
+                },
+                "10229272792353": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792350": {
+                    "availability": 22,
+                    "availabilityResale": 6
+                },
+                "10229272792382": {
+                    "availability": 11,
+                    "availabilityResale": 1
+                },
+                "10229272792383": {
+                    "availability": 10,
+                    "availabilityResale": 4
+                }
+            }
+        },
+        {
+            "id": 10229407807016,
+            "name": {
+                "de": "PK1-"
+            },
+            "rank": 6,
+            "bgColor": "f6a44e",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 70000,
+            "maxPrice": 70000,
+            "blocks": [
+                {
+                    "id": 10229272792371,
+                    "name": {
+                        "de": "117",
+                        "en": "117"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792369,
+                    "name": {
+                        "de": "119",
+                        "en": "119"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792373,
+                    "name": {
+                        "de": "121",
+                        "en": "121"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792385,
+                    "name": {
+                        "de": "3.1",
+                        "en": "3.1"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792373": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792371": {
+                    "availability": 2,
+                    "availabilityResale": 0
+                },
+                "10229272792385": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792369": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229283524106,
+            "name": {
+                "de": "PK2+"
+            },
+            "rank": 7,
+            "bgColor": "d6a70e",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 27000,
+            "maxPrice": 66000,
+            "blocks": [
+                {
+                    "id": 10229272792355,
+                    "name": {
+                        "de": "16",
+                        "en": "16"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792372,
+                    "name": {
+                        "de": "22",
+                        "en": "22"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792381,
+                    "name": {
+                        "de": "23",
+                        "en": "23"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792351,
+                    "name": {
+                        "de": "34",
+                        "en": "34"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792372": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792355": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792351": {
+                    "availability": 2,
+                    "availabilityResale": 0
+                },
+                "10229272792381": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920413,
+            "name": {
+                "de": "PK2"
+            },
+            "rank": 8,
+            "bgColor": "d6a70e",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 26000,
+            "maxPrice": 63000,
+            "blocks": [
+                {
+                    "id": 10229272792371,
+                    "name": {
+                        "de": "117",
+                        "en": "117"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792369,
+                    "name": {
+                        "de": "119",
+                        "en": "119"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792373,
+                    "name": {
+                        "de": "121",
+                        "en": "121"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792355,
+                    "name": {
+                        "de": "16",
+                        "en": "16"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792372,
+                    "name": {
+                        "de": "22",
+                        "en": "22"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792351,
+                    "name": {
+                        "de": "34",
+                        "en": "34"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792372": {
+                    "availability": 4,
+                    "availabilityResale": 2
+                },
+                "10229272792373": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792355": {
+                    "availability": 9,
+                    "availabilityResale": 4
+                },
+                "10229272792371": {
+                    "availability": 0,
+                    "availabilityResale": 1
+                },
+                "10229272792369": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792351": {
+                    "availability": 14,
+                    "availabilityResale": 5
+                }
+            }
+        },
+        {
+            "id": 10229283524107,
+            "name": {
+                "de": "PK3+"
+            },
+            "rank": 10,
+            "bgColor": "8d6c06",
+            "textColor": "FFFFFF",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 23000,
+            "maxPrice": 56000,
+            "blocks": [
+                {
+                    "id": 10229272792371,
+                    "name": {
+                        "de": "117",
+                        "en": "117"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792369,
+                    "name": {
+                        "de": "119",
+                        "en": "119"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792373,
+                    "name": {
+                        "de": "121",
+                        "en": "121"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792354,
+                    "name": {
+                        "de": "15",
+                        "en": "15"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792381,
+                    "name": {
+                        "de": "23",
+                        "en": "23"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792380,
+                    "name": {
+                        "de": "101",
+                        "en": "101"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792385,
+                    "name": {
+                        "de": "3.1",
+                        "en": "3.1"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792347,
+                    "name": {
+                        "de": "33",
+                        "en": "33"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792373": {
+                    "availability": 3,
+                    "availabilityResale": 0
+                },
+                "10229272792354": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792371": {
+                    "availability": 6,
+                    "availabilityResale": 0
+                },
+                "10229272792385": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792369": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792380": {
+                    "availability": 1,
+                    "availabilityResale": 1
+                },
+                "10229272792381": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                },
+                "10229272792347": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920423,
+            "name": {
+                "de": "PK3"
+            },
+            "rank": 11,
+            "bgColor": "8d6c06",
+            "textColor": "FFFFFF",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 22000,
+            "maxPrice": 53000,
+            "blocks": [
+                {
+                    "id": 10229272792339,
+                    "name": {
+                        "de": "116",
+                        "en": "116"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792369,
+                    "name": {
+                        "de": "119",
+                        "en": "119"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792373,
+                    "name": {
+                        "de": "121",
+                        "en": "121"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792360,
+                    "name": {
+                        "de": "122",
+                        "en": "122"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792390,
+                    "name": {
+                        "de": "123",
+                        "en": "123"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792354,
+                    "name": {
+                        "de": "15",
+                        "en": "15"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792381,
+                    "name": {
+                        "de": "23",
+                        "en": "23"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792378,
+                    "name": {
+                        "de": "102",
+                        "en": "102"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792341,
+                    "name": {
+                        "de": "103",
+                        "en": "103"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792397,
+                    "name": {
+                        "de": "134",
+                        "en": "134"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792395,
+                    "name": {
+                        "de": "135",
+                        "en": "135"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792385,
+                    "name": {
+                        "de": "3.1",
+                        "en": "3.1"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792347,
+                    "name": {
+                        "de": "33",
+                        "en": "33"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792390": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792354": {
+                    "availability": 6,
+                    "availabilityResale": 5
+                },
+                "10229272792385": {
+                    "availability": 9,
+                    "availabilityResale": 1
+                },
+                "10229272792397": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                },
+                "10229272792395": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792360": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792341": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792373": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792339": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792369": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                },
+                "10229272792381": {
+                    "availability": 9,
+                    "availabilityResale": 4
+                },
+                "10229272792378": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792347": {
+                    "availability": 17,
+                    "availabilityResale": 5
+                }
+            }
+        },
+        {
+            "id": 10229283524108,
+            "name": {
+                "de": "PK4+"
+            },
+            "rank": 13,
+            "bgColor": "639cd4",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 20000,
+            "maxPrice": 49000,
+            "blocks": [
+                {
+                    "id": 10229272792341,
+                    "name": {
+                        "de": "103",
+                        "en": "103"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792340,
+                    "name": {
+                        "de": "104",
+                        "en": "104"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792340": {
+                    "availability": 0,
+                    "availabilityResale": 1
+                },
+                "10229272792341": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920421,
+            "name": {
+                "de": "PK4"
+            },
+            "rank": 14,
+            "bgColor": "639cd4",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 19000,
+            "maxPrice": 46000,
+            "blocks": [
+                {
+                    "id": 10229272792387,
+                    "name": {
+                        "de": "115",
+                        "en": "115"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792339,
+                    "name": {
+                        "de": "116",
+                        "en": "116"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792360,
+                    "name": {
+                        "de": "122",
+                        "en": "122"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792390,
+                    "name": {
+                        "de": "123",
+                        "en": "123"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792376,
+                    "name": {
+                        "de": "105",
+                        "en": "105"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792390": {
+                    "availability": 15,
+                    "availabilityResale": 3
+                },
+                "10229272792339": {
+                    "availability": 4,
+                    "availabilityResale": 1
+                },
+                "10229272792387": {
+                    "availability": 14,
+                    "availabilityResale": 1
+                },
+                "10229272792376": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                },
+                "10229272792360": {
+                    "availability": 12,
+                    "availabilityResale": 2
+                }
+            }
+        },
+        {
+            "id": 10229283524109,
+            "name": {
+                "de": "PK5+"
+            },
+            "rank": 16,
+            "bgColor": "26b7c5",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 17000,
+            "maxPrice": 42000,
+            "blocks": [
+                {
+                    "id": 10229272792379,
+                    "name": {
+                        "de": "13.2",
+                        "en": "13.2"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792348,
+                    "name": {
+                        "de": "14",
+                        "en": "14"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792388,
+                    "name": {
+                        "de": "24.1",
+                        "en": "24.1"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792345,
+                    "name": {
+                        "de": "106",
+                        "en": "106"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792349,
+                    "name": {
+                        "de": "32.2",
+                        "en": "32.2"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792388": {
+                    "availability": 0,
+                    "availabilityResale": 1
+                },
+                "10229272792348": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792349": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792379": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792345": {
+                    "availability": 3,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920432,
+            "name": {
+                "de": "PK5"
+            },
+            "rank": 17,
+            "bgColor": "26b7c5",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 16000,
+            "maxPrice": 40000,
+            "blocks": [
+                {
+                    "id": 10229272792338,
+                    "name": {
+                        "de": "113",
+                        "en": "113"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792379,
+                    "name": {
+                        "de": "13.2",
+                        "en": "13.2"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792348,
+                    "name": {
+                        "de": "14",
+                        "en": "14"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792388,
+                    "name": {
+                        "de": "24.1",
+                        "en": "24.1"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792380,
+                    "name": {
+                        "de": "101",
+                        "en": "101"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792378,
+                    "name": {
+                        "de": "102",
+                        "en": "102"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792340,
+                    "name": {
+                        "de": "104",
+                        "en": "104"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792376,
+                    "name": {
+                        "de": "105",
+                        "en": "105"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792392,
+                    "name": {
+                        "de": "133",
+                        "en": "133"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792395,
+                    "name": {
+                        "de": "135",
+                        "en": "135"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792349,
+                    "name": {
+                        "de": "32.2",
+                        "en": "32.2"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792340": {
+                    "availability": 5,
+                    "availabilityResale": 0
+                },
+                "10229272792388": {
+                    "availability": 2,
+                    "availabilityResale": 0
+                },
+                "10229272792338": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                },
+                "10229272792380": {
+                    "availability": 0,
+                    "availabilityResale": 3
+                },
+                "10229272792348": {
+                    "availability": 1,
+                    "availabilityResale": 6
+                },
+                "10229272792349": {
+                    "availability": 1,
+                    "availabilityResale": 2
+                },
+                "10229272792378": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                },
+                "10229272792395": {
+                    "availability": 0,
+                    "availabilityResale": 1
+                },
+                "10229272792379": {
+                    "availability": 5,
+                    "availabilityResale": 0
+                },
+                "10229272792392": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792376": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920414,
+            "name": {
+                "de": "PK6 Heim-Fanbereich"
+            },
+            "rank": 20,
+            "bgColor": "187c71",
+            "textColor": "FFFFFF",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 14000,
+            "maxPrice": 35000,
+            "blocks": [
+                {
+                    "id": 10229272792356,
+                    "name": {
+                        "de": "10 Heim-Fanbereich",
+                        "en": "10 Home-Area"
+                    },
+                    "area": {
+                        "id": 10229272713972,
+                        "name": {
+                            "de": "Sektor D",
+                            "en": "Sektor D"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792361,
+                    "name": {
+                        "de": "11 Heim-Fanbereich",
+                        "en": "11 Home-Area"
+                    },
+                    "area": {
+                        "id": 10229272713972,
+                        "name": {
+                            "de": "Sektor D",
+                            "en": "Sektor D"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792358,
+                    "name": {
+                        "de": "12 Heim-Fanbereich",
+                        "en": "12 Home-Area"
+                    },
+                    "area": {
+                        "id": 10229272713972,
+                        "name": {
+                            "de": "Sektor D",
+                            "en": "Sektor D"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792337,
+                    "name": {
+                        "de": "13.1 Heim-Fanbereich",
+                        "en": "13.1 Home-Area"
+                    },
+                    "area": {
+                        "id": 10229272713972,
+                        "name": {
+                            "de": "Sektor D",
+                            "en": "Sektor D"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792367,
+                    "name": {
+                        "de": "8 Heim-Fanbereich",
+                        "en": "8 Home-Area"
+                    },
+                    "area": {
+                        "id": 10229272713972,
+                        "name": {
+                            "de": "Sektor D",
+                            "en": "Sektor D"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792365,
+                    "name": {
+                        "de": "9 Heim-Fanbereich",
+                        "en": "9 Home-Area"
+                    },
+                    "area": {
+                        "id": 10229272713972,
+                        "name": {
+                            "de": "Sektor D",
+                            "en": "Sektor D"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792358": {
+                    "availability": 9,
+                    "availabilityResale": 4
+                },
+                "10229272792356": {
+                    "availability": 17,
+                    "availabilityResale": 8
+                },
+                "10229272792337": {
+                    "availability": 5,
+                    "availabilityResale": 1
+                },
+                "10229272792367": {
+                    "availability": 10,
+                    "availabilityResale": 1
+                },
+                "10229272792365": {
+                    "availability": 11,
+                    "availabilityResale": 6
+                },
+                "10229272792361": {
+                    "availability": 9,
+                    "availabilityResale": 3
+                }
+            }
+        },
+        {
+            "id": 10229283934152,
+            "name": {
+                "de": "PK6"
+            },
+            "rank": 23,
+            "bgColor": "187c71",
+            "textColor": "FFFFFF",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 14000,
+            "maxPrice": 35000,
+            "blocks": [
+                {
+                    "id": 10229272792341,
+                    "name": {
+                        "de": "103",
+                        "en": "103"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792340,
+                    "name": {
+                        "de": "104",
+                        "en": "104"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792376,
+                    "name": {
+                        "de": "105",
+                        "en": "105"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792392,
+                    "name": {
+                        "de": "133",
+                        "en": "133"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792397,
+                    "name": {
+                        "de": "134",
+                        "en": "134"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792395,
+                    "name": {
+                        "de": "135",
+                        "en": "135"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792340": {
+                    "availability": 3,
+                    "availabilityResale": 0
+                },
+                "10229272792341": {
+                    "availability": 4,
+                    "availabilityResale": 1
+                },
+                "10229272792397": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                },
+                "10229272792395": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792392": {
+                    "availability": 1,
+                    "availabilityResale": 2
+                },
+                "10229272792376": {
+                    "availability": 2,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920430,
+            "name": {
+                "de": "PK7"
+            },
+            "rank": 26,
+            "bgColor": "0080FF",
+            "textColor": "FFFFFF",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 12000,
+            "maxPrice": 28000,
+            "blocks": [
+                {
+                    "id": 10229272792338,
+                    "name": {
+                        "de": "113",
+                        "en": "113"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792375,
+                    "name": {
+                        "de": "114",
+                        "en": "114"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792389,
+                    "name": {
+                        "de": "124",
+                        "en": "124"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792391,
+                    "name": {
+                        "de": "125",
+                        "en": "125"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792341,
+                    "name": {
+                        "de": "103",
+                        "en": "103"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792340,
+                    "name": {
+                        "de": "104",
+                        "en": "104"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792376,
+                    "name": {
+                        "de": "105",
+                        "en": "105"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792345,
+                    "name": {
+                        "de": "106",
+                        "en": "106"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792344,
+                    "name": {
+                        "de": "131",
+                        "en": "131"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792394,
+                    "name": {
+                        "de": "132",
+                        "en": "132"
+                    },
+                    "area": {
+                        "id": 10229272713974,
+                        "name": {
+                            "de": "Sektor C-Oberrang",
+                            "en": "Sektor C-Oberrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792359,
+                    "name": {
+                        "de": "7",
+                        "en": "7"
+                    },
+                    "area": {
+                        "id": 10229272713972,
+                        "name": {
+                            "de": "Sektor D",
+                            "en": "Sektor D"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792359": {
+                    "availability": 9,
+                    "availabilityResale": 0
+                },
+                "10229272792375": {
+                    "availability": 0,
+                    "availabilityResale": 3
+                },
+                "10229272792391": {
+                    "availability": 0,
+                    "availabilityResale": 1
+                },
+                "10229272792340": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792341": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792389": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272792338": {
+                    "availability": 0,
+                    "availabilityResale": 2
+                },
+                "10229272792394": {
+                    "availability": 0,
+                    "availabilityResale": 1
+                },
+                "10229272792344": {
+                    "availability": 0,
+                    "availabilityResale": 2
+                },
+                "10229272792376": {
+                    "availability": 3,
+                    "availabilityResale": 0
+                },
+                "10229272792345": {
+                    "availability": 2,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920434,
+            "name": {
+                "de": "PK8 Heim-Fanbereich"
+            },
+            "rank": 29,
+            "bgColor": "FF0000",
+            "textColor": "FFFFFF",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 9000,
+            "maxPrice": 18000,
+            "blocks": [],
+            "areas": [
+                {
+                    "id": 10229272713980,
+                    "name": {
+                        "de": "24.2",
+                        "en": "24.2"
+                    }
+                },
+                {
+                    "id": 10229272713981,
+                    "name": {
+                        "de": "25",
+                        "en": "25"
+                    }
+                },
+                {
+                    "id": 10229272713982,
+                    "name": {
+                        "de": "26",
+                        "en": "26"
+                    }
+                },
+                {
+                    "id": 10229272713983,
+                    "name": {
+                        "de": "27",
+                        "en": "27"
+                    }
+                },
+                {
+                    "id": 10229272713984,
+                    "name": {
+                        "de": "28",
+                        "en": "28"
+                    }
+                },
+                {
+                    "id": 10229272713985,
+                    "name": {
+                        "de": "29",
+                        "en": "29"
+                    }
+                },
+                {
+                    "id": 10229272713986,
+                    "name": {
+                        "de": "30",
+                        "en": "30"
+                    }
+                },
+                {
+                    "id": 10229272713987,
+                    "name": {
+                        "de": "31",
+                        "en": "31"
+                    }
+                },
+                {
+                    "id": 10229272713988,
+                    "name": {
+                        "de": "32.1",
+                        "en": "32.1"
+                    }
+                }
+            ],
+            "areaBlocksAvailability": {
+                "10229272713988": {
+                    "availability": 0,
+                    "availabilityResale": 3
+                },
+                "10229272713987": {
+                    "availability": 243,
+                    "availabilityResale": 16
+                },
+                "10229272713986": {
+                    "availability": 144,
+                    "availabilityResale": 16
+                },
+                "10229272713985": {
+                    "availability": 1,
+                    "availabilityResale": 37
+                },
+                "10229272713984": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                },
+                "10229272713983": {
+                    "availability": 96,
+                    "availabilityResale": 14
+                },
+                "10229272713982": {
+                    "availability": 140,
+                    "availabilityResale": 21
+                },
+                "10229272713981": {
+                    "availability": 67,
+                    "availabilityResale": 15
+                },
+                "10229272713980": {
+                    "availability": 0,
+                    "availabilityResale": 17
+                }
+            }
+        },
+        {
+            "id": 10229272920416,
+            "name": {
+                "de": "VIP"
+            },
+            "rank": 42,
+            "bgColor": "00AD57",
+            "textColor": "FFFFFF",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 487900,
+            "maxPrice": 487900,
+            "blocks": [
+                {
+                    "id": 10229272792373,
+                    "name": {
+                        "de": "121",
+                        "en": "121"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792373": {
+                    "availability": 24,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920417,
+            "name": {
+                "de": "PK1SB"
+            },
+            "rank": 44,
+            "bgColor": "f2b5f4",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 52500,
+            "maxPrice": 52500,
+            "blocks": [
+                {
+                    "id": 10229272792353,
+                    "name": {
+                        "de": "18",
+                        "en": "18"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792374,
+                    "name": {
+                        "de": "20",
+                        "en": "20"
+                    },
+                    "area": {
+                        "id": 10229272713975,
+                        "name": {
+                            "de": "Sektor A-Unterrang",
+                            "en": "Sektor A-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792374": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                },
+                "10229272792353": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920418,
+            "name": {
+                "de": "PK2SB"
+            },
+            "rank": 45,
+            "bgColor": "f2b5f4",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 44100,
+            "maxPrice": 44100,
+            "blocks": [
+                {
+                    "id": 10229272792351,
+                    "name": {
+                        "de": "34",
+                        "en": "34"
+                    },
+                    "area": {
+                        "id": 10229272713976,
+                        "name": {
+                            "de": "Sektor C-Unterrang",
+                            "en": "Sektor C-Unterrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792351": {
+                    "availability": 10,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920407,
+            "name": {
+                "de": "PK4SB"
+            },
+            "rank": 47,
+            "bgColor": "f2b5f4",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 32200,
+            "maxPrice": 32200,
+            "blocks": [
+                {
+                    "id": 10229272792390,
+                    "name": {
+                        "de": "123",
+                        "en": "123"
+                    },
+                    "area": {
+                        "id": 10229272713973,
+                        "name": {
+                            "de": "Sektor A-Oberrang",
+                            "en": "Sektor A-Oberrang"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792390": {
+                    "availability": 1,
+                    "availabilityResale": 0
+                }
+            }
+        },
+        {
+            "id": 10229272920412,
+            "name": {
+                "de": "PK6SB"
+            },
+            "rank": 49,
+            "bgColor": "f2b5f4",
+            "textColor": "000000",
+            "sameBlockRestrictionMode": "NONE",
+            "minPrice": 24500,
+            "maxPrice": 24500,
+            "blocks": [
+                {
+                    "id": 10229272792356,
+                    "name": {
+                        "de": "10 Heim-Fanbereich",
+                        "en": "10 Home-Area"
+                    },
+                    "area": {
+                        "id": 10229272713972,
+                        "name": {
+                            "de": "Sektor D",
+                            "en": "Sektor D"
+                        }
+                    }
+                },
+                {
+                    "id": 10229272792337,
+                    "name": {
+                        "de": "13.1 Heim-Fanbereich",
+                        "en": "13.1 Home-Area"
+                    },
+                    "area": {
+                        "id": 10229272713972,
+                        "name": {
+                            "de": "Sektor D",
+                            "en": "Sektor D"
+                        }
+                    }
+                }
+            ],
+            "areas": [],
+            "areaBlocksAvailability": {
+                "10229272792356": {
+                    "availability": 2,
+                    "availabilityResale": 0
+                },
+                "10229272792337": {
+                    "availability": 0,
+                    "availabilityResale": 0
+                }
+            }
+        }
+    ],
+    "addedSeats": [],
+    "productType": "SPORTING_EVENT",
+    "maxAllowedSeats": 6,
+    "priceFilters": {}
+}

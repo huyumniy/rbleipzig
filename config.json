@@ -1,0 +1,7 @@
+{
+    "attempt_retry_seconds": 15,
+    "max_attempts_to_reload": 60,
+    "blacklist_ttl": 300000,
+    "sheets_refresh_interval_minutes": 1,
+    "sheets_link": "https://docs.google.com/spreadsheets/d/1iXDO7OiXnllRS0ZooSk1UdQcAvYFjOk2MCJvZQF1QM0/edit?gid=0#gid=0"
+}
