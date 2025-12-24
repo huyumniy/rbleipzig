@@ -2,7 +2,7 @@
     "data": {
         "prices": [
             {
-                "amount": 43000,
+                "amount": 30000,
                 "minQuantity": 1,
                 "maxQuantity": 6,
                 "priceLevelMemberCategory": false,
@@ -24,10 +24,10 @@
                 },
                 "externalVerification": {},
                 "degressivePrices": [],
-                "amountWithoutAdvantage": 43000
+                "amountWithoutAdvantage": 30000
             },
             {
-                "amount": 39000,
+                "amount": 27000,
                 "minQuantity": 1,
                 "maxQuantity": 6,
                 "priceLevelMemberCategory": false,
@@ -50,10 +50,10 @@
                 },
                 "externalVerification": {},
                 "degressivePrices": [],
-                "amountWithoutAdvantage": 39000
+                "amountWithoutAdvantage": 27000
             },
             {
-                "amount": 22000,
+                "amount": 15000,
                 "minQuantity": 1,
                 "maxQuantity": 6,
                 "priceLevelMemberCategory": false,
@@ -76,10 +76,10 @@
                 },
                 "externalVerification": {},
                 "degressivePrices": [],
-                "amountWithoutAdvantage": 22000
+                "amountWithoutAdvantage": 15000
             },
             {
-                "amount": 18000,
+                "amount": 12000,
                 "minQuantity": 1,
                 "maxQuantity": 3,
                 "priceLevelMemberCategory": false,
@@ -113,7 +113,7 @@
                 },
                 "conditionalRate": {
                     "rateInfo": "Wähle mindestens 1 Artikel zum Tarif Vollzahler oder Vollzahler oder Ermäßigt* oder Mitarbeiterkarte oder Schüler/Student oder Bullis Bande Familienspecial - Vollzahler oder DK-Inhaber oder Ermäßigt oder Gehörlos oder Vollzahler um von diesem \"Kind (0-14)\"-Tarif zu profitieren.",
-                    "rateWarning": "Du musst mindestens 1 Element zum Preis von Vollzahler oder Vollzahler oder Ermäßigt* oder Mitarbeiterkarte oder Schüler/Student oder Bullis Bande Familienspecial - Vollzahler oder DK-Inhaber oder Ermäßigt oder Gehörlos oder Vollzahler, PK3 auswählen, um vom \"Kind (0-14)\" Preis profitieren zu können.",
+                    "rateWarning": "Du musst mindestens 1 Element zum Preis von Vollzahler oder Vollzahler oder Ermäßigt* oder Mitarbeiterkarte oder Schüler/Student oder Bullis Bande Familienspecial - Vollzahler oder DK-Inhaber oder Ermäßigt oder Gehörlos oder Vollzahler, PK6 Heim-Fanbereich auswählen, um vom \"Kind (0-14)\" Preis profitieren zu können.",
                     "triggerQuantity": 1,
                     "parentThreshold": 1,
                     "childRatio": 1,
@@ -134,36 +134,36 @@
                 },
                 "externalVerification": {},
                 "degressivePrices": [],
-                "amountWithoutAdvantage": 18000
+                "amountWithoutAdvantage": 12000
             }
         ],
         "seatCategory": {
-            "id": 10229272920423,
+            "id": 10229272920414,
             "name": {
-                "de": "PK3"
+                "de": "PK6 Heim-Fanbereich"
             },
-            "rank": 11,
-            "bgColor": "8d6c06",
+            "rank": 20,
+            "bgColor": "187c71",
             "textColor": "FFFFFF",
             "sameBlockRestrictionMode": "NONE"
         },
         "block": {
-            "id": 10229272792371,
+            "id": 10229272792358,
             "name": {
-                "de": "117",
-                "en": "117"
+                "de": "12 Heim-Fanbereich",
+                "en": "12 Home-Area"
             }
         },
         "area": {
-            "id": 10229272713973,
+            "id": 10229272713972,
             "name": {
-                "de": "Sektor A-Oberrang",
-                "en": "Sektor A-Oberrang"
+                "de": "Sektor D",
+                "en": "Sektor D"
             }
         },
-        "contingentId": 10229151891403,
-        "scenePanoLink": "tk3d://https://tk3d.tk3dapi.com/ticketing3d/TICKETING3D.js?venue_id=eu-de-00020-leipzig&view_id=S_117-26-15",
-        "seatQuality": "Gepolsterter Sitz",
+        "contingentId": 0,
+        "scenePanoLink": "tk3d://https://tk3d.tk3dapi.com/ticketing3d/TICKETING3D.js?venue_id=eu-de-00020-leipzig&view_id=S_12-14-15",
+        "seatQuality": "Klappsitz",
         "stageVisibility": "Sichtbar",
         "stageVisibilityType": "VISIBLE"
     }

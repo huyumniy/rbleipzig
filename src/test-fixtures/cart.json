@@ -1,0 +1,17 @@
+{
+    "cart": {
+        "cartId": 8754004,
+        "totalItems": 3,
+        "totalAmount": 90,
+        "productsTotal": 90000,
+        "cartToken": "8ca691d3-d7ff-4995-8f89-83c788445802_8754004",
+        "expirationDate": "2025-12-24T12:02:11.729Z",
+        "orderType": "SALE",
+        "numCartItemsByProductType": {
+            "SPORTING_EVENT": 3
+        },
+        "exchange": false
+    },
+    "reservationIndex": 0,
+    "selectedSeatsNotAttributed": false
+}
