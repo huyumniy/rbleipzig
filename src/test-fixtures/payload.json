@@ -1,0 +1,26 @@
+{
+  "seasonTicketMode": false,
+  "items": [
+    {
+      "productId": 10229270232694,
+      "quantity": 2,
+      "seatCategoryId": 10229272920434,
+      "tariffId": 10229269211120,
+      "performanceId": 10229270235125,
+      "physicalSeatIds": [],
+      "areaBlockId": [10229272713985],
+      "nonNumberSeat": true,
+      "areaId": 10229272713985,
+      "movementIds": [],
+      "amount": 17000,
+      "marketType": "BOTH"
+    }
+  ],
+  "partnerAdvantageId": "",
+  "crossSell": {
+    "ppid": "",
+    "reservationIdx": "",
+    "crossSellId": "",
+    "baseOperationIdsString": ""
+  }
+}

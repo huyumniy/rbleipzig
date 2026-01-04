@@ -1,6 +1,7 @@
 /**
- * Return per-request list of available BLOCK IDs sorted by total availability (desc).
- * quantity = minimal tickets required per block
+ * Return per-request list of available BLOCK or AREA IDs
+ * sorted by total availability (desc).
+ * quantity = minimal tickets required per block/area
  */
 function getAvailableBlockIds(eventData, requests, opts = {}) {
   const { considerResale = false } = opts;
@@ -8,33 +9,74 @@ function getAvailableBlockIds(eventData, requests, opts = {}) {
   if (!eventData || !Array.isArray(eventData.priceRangeCategories)) return [];
 
   return requests
-    .map(req => {
+    .map((req) => {
       const cat = eventData.priceRangeCategories.find(
-        c => c?.name?.de === req.category
+        (c) => c?.name?.de === req.category
       );
       if (!cat) return null;
 
-      const ab = cat.areaBlocksAvailability || {};
+      const availabilityMap = cat.areaBlocksAvailability || {};
+      const seatCategoryId = cat.id;
 
-      const blocks = (cat.blocks || []).map(block => {
-        const key = String(block.id);
-        const avail = ab[key] || ab[block.id] || {};
-        const total =
-          (avail.availability || 0) +
-          (considerResale ? (avail.availabilityResale || 0) : 0);
+      const isStanding =
+        Array.isArray(cat.areas) &&
+        cat.areas.length > 0 &&
+        (!Array.isArray(cat.blocks) || cat.blocks.length === 0);
+
+      // ---- BLOCK MODE ----
+      if (!isStanding) {
+        const blocks = (cat.blocks || []).map((block) => {
+          const key = String(block.id);
+          const avail = availabilityMap[key] || {};
+          const total =
+            (avail.availability || 0) +
+            (considerResale ? avail.availabilityResale || 0 : 0);
+
+          return {
+            id: block.id,
+            total,
+          };
+        });
+
+        const filteredSorted = blocks
+          .filter((b) => b.total >= req.quantity)
+          .sort((a, b) => {
+            if (b.total !== a.total) return b.total - a.total;
+            return a.id - b.id;
+          });
+
+        if (filteredSorted.length === 0) return null;
 
         return {
-          blockId: block.id,
-          total
+          category: req.category,
+          name: req.name,
+          quantity: req.quantity,
+          tribune: req.tribune || '',
+          seatCategoryId,
+          type: 'blocks',
+          blockIds: filteredSorted.map((b) => b.id),
+        };
+      }
+
+      // ---- AREA MODE (standing) ----
+      const areas = (cat.areas || []).map((area) => {
+        const key = String(area.id);
+        const avail = availabilityMap[key] || {};
+        const total =
+          (avail.availability || 0) +
+          (considerResale ? avail.availabilityResale || 0 : 0);
+
+        return {
+          id: area.id,
+          total,
         };
       });
 
-      const filteredSorted = blocks
-        // quantity = minimal availability per block
-        .filter(b => b.total >= req.quantity)
+      const filteredSorted = areas
+        .filter((a) => a.total >= req.quantity)
         .sort((a, b) => {
           if (b.total !== a.total) return b.total - a.total;
-          return a.blockId - b.blockId; // stable tie-breaker
+          return a.id - b.id;
         });
 
       if (filteredSorted.length === 0) return null;
@@ -43,8 +85,10 @@ function getAvailableBlockIds(eventData, requests, opts = {}) {
         category: req.category,
         name: req.name,
         quantity: req.quantity,
-        tribune: req.tribune || "",
-        blockIds: filteredSorted.map(b => b.blockId)
+        tribune: req.tribune || '',
+        seatCategoryId,
+        type: 'areas',
+        areaIds: filteredSorted.map((a) => a.id),
       };
     })
     .filter(Boolean);
@@ -62,7 +106,7 @@ function getAvailableBlockIds(eventData, requests, opts = {}) {
  */
 function findNearbyChains(features, minLen, category, blacklist = []) {
   // Filter by category & blacklist
-  const validSeats = features.filter(f => {
+  const validSeats = features.filter((f) => {
     const p = f.properties;
     return (
       !blacklist.includes(f.id) &&
@@ -72,7 +116,7 @@ function findNearbyChains(features, minLen, category, blacklist = []) {
 
   // Group seats by area
   const areaMap = new Map();
-  validSeats.forEach(f => {
+  validSeats.forEach((f) => {
     const areaKey = f.properties.area.name.de;
     if (!areaMap.has(areaKey)) areaMap.set(areaKey, []);
     areaMap.get(areaKey).push(f);
@@ -80,11 +124,13 @@ function findNearbyChains(features, minLen, category, blacklist = []) {
 
   const chains = [];
 
-  areaMap.forEach(seats => {
+  areaMap.forEach((seats) => {
     // Sort by row DESC, number ASC
     seats.sort((a, b) => {
       const rowDiff = Number(b.properties.row) - Number(a.properties.row);
-      return rowDiff !== 0 ? rowDiff : Number(a.properties.number) - Number(b.properties.number);
+      return rowDiff !== 0
+        ? rowDiff
+        : Number(a.properties.number) - Number(b.properties.number);
     });
 
     const used = new Set();
@@ -108,8 +154,8 @@ function findNearbyChains(features, minLen, category, blacklist = []) {
         const numDiff = Math.abs(n1 - n2);
 
         const canChain =
-          (r1 === r2 && numDiff <= 2) || 
-          (Math.abs(rowDiff) === 1 && numDiff === 1); 
+          (r1 === r2 && numDiff <= 2) ||
+          (Math.abs(rowDiff) === 1 && numDiff === 1);
 
         if (canChain) {
           chain.push(seats[j]);
@@ -124,7 +170,6 @@ function findNearbyChains(features, minLen, category, blacklist = []) {
   return chains;
 }
 
-
 function getRandomChainSlice(chains, qty) {
   if (!chains.length) return [];
   const chain = chains[Math.floor(Math.random() * chains.length)];
@@ -132,7 +177,6 @@ function getRandomChainSlice(chains, qty) {
   const start = Math.floor(Math.random() * (chain.length - qty + 1));
   return chain.slice(start, start + qty);
 }
-
 
 function getBiggestChainSlice(chains, qty, maxSize = 6) {
   if (!Array.isArray(chains) || chains.length === 0) return [];
@@ -151,7 +195,9 @@ function getBiggestChainSlice(chains, qty, maxSize = 6) {
   return biggestChain.slice(0, maxSize);
 }
 
-
-
-
-export { findNearbyChains, getAvailableBlockIds, getRandomChainSlice, getBiggestChainSlice };
+export {
+  findNearbyChains,
+  getAvailableBlockIds,
+  getRandomChainSlice,
+  getBiggestChainSlice,
+};
