@@ -169,312 +169,260 @@ export async function main() {
         (entry) => now - entry.timestamp < config.blacklist_ttl
       );
       localStorage.setItem('blacklist', JSON.stringify(blacklist));
-      let blacklistIds = blacklist.map((entry) => entry.id);
 
       let randomCategory =
         availableBlockIds[Math.floor(Math.random() * availableBlockIds.length)];
 
       if (randomCategory.type === 'areas') {
-        // ADD STANDING TICKETS
-
-        let randomAreaId =
-          randomCategory.areaIds[
-            Math.floor(Math.random() * randomCategory.areaIds.length)
-          ];
-        const seatEndpoint =
-          `${domain}/tnwr/v1/seatmap/area/detail?` +
-          `productId=${productId}` +
-          `&perfId=${performanceId}` +
-          `&areaId=${randomAreaId}` +
-          `&seatCategoryId=${randomCategory.seatCategoryId}` +
-          `&advantageId=&ticketFilters=BOTH`;
-        console.log('Fetching seat from:', seatEndpoint);
-
-        const {
-          status: seatStatus,
-          text: seatText,
-          json: seatResponse,
-          error: seatError,
-        } = await getData(seatEndpoint, {
-          headers: { 'x-csrf-token': csrfToken },
-        });
-
-        if (seatStatus !== 200 || !seatResponse || seatError) {
-          console.error('Error fetching seats', seatError, seatText);
-          _countAndRun();
-          return;
-        }
-
-        console.log('seatResponse:', seatResponse);
-
-        const data = seatResponse.data;
-
-        const grouptedItems = new Map();
-
-        // Тариф Adult (Vollzahler)
-        const adultPrice = data.prices.find(
-          (p) => p.audienceSubCategory.code === 'TPUBVZ'
-        );
-
-        const groupKey = [
+        await handlingStandingCategory({
+          domain,
+          csrfToken,
           productId,
           performanceId,
-          data.seatCategory.id,
-          adultPrice.audienceSubCategory.id,
-          data.area.id,
-        ].join('_');
-
-        if (!grouptedItems.has(groupKey)) {
-          grouptedItems.set(groupKey, {
-            productId,
-            performanceId,
-            seatCategoryId: data.seatCategory.id,
-            tariffId: adultPrice.audienceSubCategory.id,
-            areaBlockId: [data.area.id],
-            physicalSeatIds: [],
-            movementIds: [],
-            marketType: 'BOTH',
-            nonNumberSeat: true,
-            amount: adultPrice.amount,
-          });
-        }
-        // Send cart addition request
-        const items = Array.from(grouptedItems.values()).map((item) => ({
-          ...item,
-          quantity: randomCategory.quantity,
-        }));
-
-        const cartEndpoint = `${domain}/tnwr/v1/cart`;
-        console.log('Adding seats to cart via:', cartEndpoint);
-        const {
-          status: cartStatus,
-          text: cartText,
-          json: cartResponse,
-          error: cartError,
-        } = await sendData(
-          cartEndpoint,
-          JSON.stringify({
-            seasonTicketMode: false,
-            items,
-            partnerAdvantageId: '',
-            crossSell: {
-              ppid: '',
-              reservationIdx: '',
-              crossSellId: '',
-              baseOperationIdsString: '',
-            },
-          }),
-          { headers: { 'x-csrf-token': csrfToken } }
-        );
-
-        if (cartStatus !== 200 || !cartResponse || cartError) {
-          console.error('Add to cart request error:', cartError, cartText);
-          _countAndRun();
-          return;
-        }
-
-        if (
-          cartResponse?.errors?.some(
-            (err) => err?.errorCode === 'TOO_MANY_TICKETS'
-          )
-        ) {
-          console.error('Cart already has tickets, cannot add more.');
-          window.location.href = `${domain}/cart/reservation/0`;
-          return;
-        }
-
-        if (cartResponse?.errors?.length > 0) {
-          console.error('Add to cart response errors:', cartResponse.errors);
-          _countAndRun();
-          return;
-        }
-
-        localStorage.setItem('blacklist', JSON.stringify(blacklist));
-        console.log('Seats successfully added to cart!');
-
-        window.location.href = `${domain}/cart/reservation/0`;
-        return;
-        // PICK RANDOM BLOCK ID
-      } else if (randomCategory.type === 'blocks') {
-        let randomBlockId =
-          randomCategory.blockIds[
-            Math.floor(Math.random() * randomCategory.blockIds.length)
-          ];
-
-        // Fetch seat data
-        const seatsEndpoint =
-          `${domain}/tnwr/v1/seatmap/seats/free/3ddvBlock` +
-          `?performanceId=${performanceId}` +
-          `&productId=${productId}` +
-          `&blockId=${randomBlockId}` +
-          `&isSeasonTicketMode=false&isExclusive=false`;
-
-        console.log('Fetching seats from:', seatsEndpoint);
-
-        const {
-          status: seatsStatus,
-          text: seatsText,
-          json: seatsResponse,
-          error: seatsError,
-        } = await getData(seatsEndpoint, {
-          headers: { 'x-csrf-token': csrfToken },
+          randomCategory,
+          blacklist,
         });
-        if (seatsStatus !== 200 || !seatsResponse || seatsError) {
-          console.error('Error fetching seats', seatsError, seatsText);
-          _countAndRun();
-          return;
-        }
-
-        console.log('seatsResponse:', seatsResponse);
-        let nearbyChains = findNearbyChains(
-          seatsResponse.features,
-          randomCategory.quantity,
-          randomCategory.category,
-          blacklistIds
-        );
-
-        if (nearbyChains.length === 0) {
-          console.log('No nearby chains found');
-          _countAndRun();
-          return;
-        }
-        console.log('nearbyChains:', nearbyChains);
-
-        let randomChainSlice = getBiggestChainSlice(
-          nearbyChains,
-          randomCategory.quantity
-        );
-        console.log('randomChainSlice:', randomChainSlice);
-
-        let valid = true;
-        const grouptedItems = new Map();
-
-        for (let seatFeature of randomChainSlice) {
-          const seatId = seatFeature.id;
-          blacklist.push({ id: seatId, timestamp: Date.now() });
-
-          const seatEndpoint =
-            `${domain}/tnwr/v1/seatmap/seats/detail?` +
-            `productId=${productId}` +
-            `&perfId=${performanceId}` +
-            `&seatId=${seatId}` +
-            `&isChangeSeat=false&isExclusive=false&advantageId=`;
-          console.log('Fetching seat from:', seatEndpoint);
-
-          const {
-            status: seatStatus,
-            text: seatText,
-            json: seatResponse,
-            error: seatError,
-          } = await getData(seatEndpoint, {
-            headers: { 'x-csrf-token': csrfToken },
-          });
-
-          if (seatStatus !== 200 || !seatResponse || seatError) {
-            console.error('Error fetching seats', seatError, seatText);
-            valid = false;
-            break;
-          }
-
-          console.log('seatResponse:', seatResponse);
-
-          const data = seatResponse.data;
-
-          // Тариф Adult (Vollzahler)
-          const adultPrice = data.prices.find(
-            (p) => p.audienceSubCategory.code === 'TPUBVZ'
-          );
-
-          const groupKey = [
-            productId,
-            performanceId,
-            data.seatCategory.id,
-            adultPrice.audienceSubCategory.id,
-            data.block.id,
-          ].join('_');
-
-          if (!grouptedItems.has(groupKey)) {
-            grouptedItems.set(groupKey, {
-              productId,
-              performanceId,
-              seatCategoryId: data.seatCategory.id,
-              tariffId: adultPrice.audienceSubCategory.id,
-              areaBlockId: [data.block.id],
-              physicalSeatIds: [],
-              movementIds: [],
-              amount: adultPrice.amount,
-            });
-          }
-
-          grouptedItems.get(groupKey).physicalSeatIds.push(seatId);
-        }
-        if (!valid) {
-          _countAndRun();
-          return;
-        }
-
-        // Send cart addition request
-        const items = Array.from(grouptedItems.values()).map((item) => ({
-          ...item,
-          quantity: randomChainSlice.length,
-        }));
-
-        const cartEndpoint = `${domain}/tnwr/v1/cart`;
-        console.log('Adding seats to cart via:', cartEndpoint);
-        const {
-          status: cartStatus,
-          text: cartText,
-          json: cartResponse,
-          error: cartError,
-        } = await sendData(
-          cartEndpoint,
-          JSON.stringify({
-            seasonTicketMode: false,
-            items,
-            partnerAdvantageId: '',
-            crossSell: {
-              ppid: '',
-              reservationIdx: '',
-              crossSellId: '',
-              baseOperationIdsString: '',
-            },
-          }),
-          { headers: { 'x-csrf-token': csrfToken } }
-        );
-
-        if (cartStatus !== 200 || !cartResponse || cartError) {
-          console.error('Add to cart request error:', cartError, cartText);
-          _countAndRun();
-          return;
-        }
-
-        if (
-          cartResponse?.errors?.some(
-            (err) => err?.errorCode === 'TOO_MANY_TICKETS'
-          )
-        ) {
-          console.error('Cart already has tickets, cannot add more.');
-          window.location.href = `${domain}/cart/reservation/0`;
-          return;
-        }
-
-        if (cartResponse?.errors?.length > 0) {
-          console.error('Add to cart response errors:', cartResponse.errors);
-          _countAndRun();
-          return;
-        }
-
-        localStorage.setItem('blacklist', JSON.stringify(blacklist));
-        console.log('Seats successfully added to cart!');
-
-        window.location.href = `${domain}/cart/reservation/0`;
-        return;
+      } else if (randomCategory.type === 'blocks') {
+        await handleBlockCategory({
+          domain,
+          csrfToken,
+          productId,
+          performanceId,
+          randomCategory,
+          blacklist,
+        });
       }
     }
   } catch (err) {
     console.error('Resale flow error:', err);
   }
   return false;
+}
+
+async function handlingStandingCategory({
+  domain,
+  csrfToken,
+  productId,
+  performanceId,
+  randomCategory,
+  blacklist,
+}) {
+  // ADD STANDING TICKETS
+  let randomAreaId =
+    randomCategory.areaIds[
+      Math.floor(Math.random() * randomCategory.areaIds.length)
+    ];
+
+  const seatEndpoint =
+    `${domain}/tnwr/v1/seatmap/area/detail?` +
+    `productId=${productId}` +
+    `&perfId=${performanceId}` +
+    `&areaId=${randomAreaId}` +
+    `&seatCategoryId=${randomCategory.seatCategoryId}` +
+    `&advantageId=&ticketFilters=BOTH`;
+
+  console.log('[DEBUG] Fetching seat from:', seatEndpoint);
+
+  const {
+    status: seatStatus,
+    text: seatText,
+    json: seatResponse,
+    error: seatError,
+  } = await getData(seatEndpoint, {
+    headers: { 'x-csrf-token': csrfToken },
+  });
+
+  if (seatStatus !== 200 || !seatResponse || seatError) {
+    console.error('Error fetching seats', seatError, seatText);
+    _countAndRun();
+    return false;
+  }
+
+  console.log('seatResponse:', seatResponse);
+
+  const data = seatResponse.data;
+  // Тариф Adult (Vollzahler)
+  const adultPrice = getAdultPrice(data);
+
+  const items = [
+    {
+      productId,
+      performanceId,
+      seatCategoryId: data.seatCategory.id,
+      tariffId: adultPrice.audienceSubCategory.id,
+      areaBlockId: [data.area.id],
+      physicalSeatIds: [],
+      movementIds: [],
+      marketType: 'BOTH',
+      nonNumberSeat: true,
+      amount: adultPrice.amount,
+      quantity: randomCategory.quantity,
+    },
+  ];
+
+  const result = await addToCart(domain, csrfToken, items);
+  if (!result.ok) return false;
+
+  localStorage.setItem('blacklist', JSON.stringify(blacklist));
+  window.location.href = `${domain}/cart/reservation/0`;
+  return true;
+}
+
+async function handleBlockCategory({
+  domain,
+  productId,
+  performanceId,
+  csrfToken,
+  randomCategory,
+  blacklist,
+  blacklistIds,
+}) {
+  const randomBlockId =
+    randomCategory.blockIds[
+      Math.floor(Math.random() * randomCategory.blockIds.length)
+    ];
+
+  const seatsEndpoint =
+    `${domain}/tnwr/v1/seatmap/seats/free/3ddvBlock` +
+    `?performanceId=${performanceId}` +
+    `&productId=${productId}` +
+    `&blockId=${randomBlockId}` +
+    `&isSeasonTicketMode=false&isExclusive=false`;
+
+  const {
+    status: seatsStatus,
+    text: seatsText,
+    json: seatsResponse,
+    error: seatsError,
+  } = await getData(seatsEndpoint, {
+    headers: { 'x-csrf-token': csrfToken },
+  });
+
+  if (seatsStatus !== 200 || !seatsResponse || seatsError) {
+    console.error('Error fetching seats', seatsError, seatsText);
+    _countAndRun();
+    return false;
+  }
+
+  const nearbyChains = findNearbyChains(
+    seatsResponse.features,
+    randomCategory.quantity,
+    randomCategory.category,
+    blacklistIds
+  );
+
+  if (!nearbyChains.length) return false;
+
+  const chain = getBiggestChainSlice(nearbyChains, randomCategory.quantity);
+
+  const grouped = new Map();
+
+  for (const seat of chain) {
+    blacklist.push({ id: seat.id, timestamp: Date.now() });
+
+    const seatEndpoint =
+      `${domain}/tnwr/v1/seatmap/seats/detail?` +
+      `productId=${productId}` +
+      `&perfId=${performanceId}` +
+      `&seatId=${seat.id}` +
+      `&isChangeSeat=false&isExclusive=false&advantageId=`;
+
+    const {
+      status: seatStatus,
+      text: seatText,
+      json: seatResponse,
+      error: seatError,
+    } = await getData(seatEndpoint, {
+      headers: { 'x-csrf-token': csrfToken },
+    });
+
+    if (seatStatus !== 200 || !seatResponse || seatError) {
+      console.error('Error fetching seats', seatError, seatText);
+      _countAndRun();
+      return false;
+    }
+
+    const data = seatResponse.data;
+    const adultPrice = getAdultPrice(data);
+
+    const key = [
+      productId,
+      performanceId,
+      data.seatCategory.id,
+      adultPrice.audienceSubCategory.id,
+      data.block.id,
+    ].join('_');
+
+    if (!grouped.has(key)) {
+      grouped.set(key, {
+        productId,
+        performanceId,
+        seatCategoryId: data.seatCategory.id,
+        tariffId: adultPrice.audienceSubCategory.id,
+        areaBlockId: [data.block.id],
+        physicalSeatIds: [],
+        movementIds: [],
+        amount: adultPrice.amount,
+      });
+    }
+
+    grouped.get(key).physicalSeatIds.push(seat.id);
+  }
+
+  const items = [...grouped.values()].map((i) => ({
+    ...i,
+    quantity: chain.length,
+  }));
+
+  const result = await addToCart(domain, csrfToken, items);
+  if (!result.ok) return false;
+
+  localStorage.setItem('blacklist', JSON.stringify(blacklist));
+  window.location.href = `${domain}/cart/reservation/0`;
+  return true;
+}
+
+function getAdultPrice(data) {
+  return data.prices.find((p) => p.audienceSubCategory.code === 'TPUBVZ');
+}
+
+async function addToCart(domain, csrfToken, items) {
+  const cartEndpoint = `${domain}/tnwr/v1/cart`;
+  console.log('Adding seats to cart via:', cartEndpoint);
+
+  const { status, text, json, error } = await sendData(
+    cartEndpoint,
+    JSON.stringify({
+      seasonTicketMode: false,
+      items,
+      partnerAdvantageId: '',
+      crossSell: {
+        ppid: '',
+        reservationIdx: '',
+        crossSellId: '',
+        baseOperationIdsString: '',
+      },
+    }),
+    { headers: { 'x-csrf-token': csrfToken } }
+  );
+
+  if (status !== 200 || !json || error) {
+    console.error('Add to cart request error:', error, text);
+    return { ok: false };
+  }
+
+  if (json?.errors?.some((e) => e?.errorCode === 'TOO_MANY_TICKETS')) {
+    console.error('Cart already has tickets.');
+    window.location.href = `${domain}/cart/reservation/0`;
+    return { ok: false, redirect: true };
+  }
+
+  if (json?.errors?.length) {
+    console.error('Add to cart response errors:', json.errors);
+    return { ok: false };
+  }
+
+  return { ok: true };
 }
 
 (async function init() {
